@@ -1,5 +1,5 @@
-from django.http import HttpResponse
-from django.shortcuts import render
+from .models import Employee
+from django.views.generic import ListView
 
-def home (request):
-    return HttpResponse('Hello World')
+class EmployeeList(ListView):
+    model = Employee

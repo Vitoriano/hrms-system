@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <h1>List Employee</h1>
+
+    <div>
+
+        {% for employee in object_list %}
+            {{ employee }} <br>
+        {% endfor %}
+
+    </div>
+
+{% endblock %}
